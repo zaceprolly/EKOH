@@ -19,6 +19,10 @@
   Free. No account, no ads, no tracking. Android 10 or newer.
 </p>
 
+<p align="center">
+  <a href="https://www.virustotal.com/gui/file/7651934984b539e6d7dd11455c692893947d7611545939e0fac0065a0f0e0e0c"><img src="https://img.shields.io/badge/VirusTotal-0%20of%2067%20engines%20flag%20it-2E7D32?style=flat-square" alt="VirusTotal: 0 of 67 engines flag it"></a>
+</p>
+
 ---
 
 ## Install in 3 steps
@@ -63,6 +67,12 @@ The green dot at the top of your screen shows when EKOH is using the microphone,
 EKOH lets go of the microphone when the screen is off, while you watch videos or play games, and
 whenever another app needs it.
 
+**Scanned clean:** [VirusTotal report](https://www.virustotal.com/gui/file/7651934984b539e6d7dd11455c692893947d7611545939e0fac0065a0f0e0e0c): 0 of 67 antivirus engines (including Google's) flag EKOH.
+
+If Play Protect warns you anyway: in India, Google automatically warns about every app downloaded from a
+browser that uses accessibility or notification access (EKOH uses them to press call buttons and control
+music). Tap **More details › Install anyway**.
+
 **Check it yourself:** Settings › Apps › EKOH › Permissions has no network permission. Or watch your
 phone's traffic with a no-root packet logger such as [PCAPdroid](https://github.com/emanuele-f/PCAPdroid):
 EKOH never appears.
@@ -80,4 +90,5 @@ you say it. EKOH can also use Android's **English (India)** speech pack for Indi
 
 ## Verify the download
 
-Every release lists the SHA-256 checksum of `EKOH.apk` in its notes.
+Every release lists the SHA-256 checksum of `EKOH.apk` in its notes, and you can look it up on
+[VirusTotal](https://www.virustotal.com/gui/file/7651934984b539e6d7dd11455c692893947d7611545939e0fac0065a0f0e0e0c).
