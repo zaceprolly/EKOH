@@ -20,6 +20,11 @@
 </p>
 
 <p align="center">
+  <sub>Phone says <b>“App blocked to protect your device”</b>? Use
+  <a href="https://github.com/zaceprolly/EKOH/releases/latest/download/EKOH-Lite.apk">EKOH Lite</a> (beta) instead.</sub>
+</p>
+
+<p align="center">
   <a href="https://www.virustotal.com/gui/file/7651934984b539e6d7dd11455c692893947d7611545939e0fac0065a0f0e0e0c"><img src="https://img.shields.io/badge/VirusTotal-0%20of%2067%20engines%20flag%20it-2E7D32?style=flat-square" alt="VirusTotal: 0 of 67 engines flag it"></a>
 </p>
 
@@ -34,6 +39,26 @@
 If Android shows **“Restricted setting”** when you turn on EKOH's accessibility service: open
 **Settings › Apps › EKOH**, tap the three-dot menu, choose **Allow restricted settings**, then try again.
 (Android does this for every app installed outside the Play Store.)
+
+## EKOH Lite (only if the main version won't install)
+
+In India, Google Play Protect blocks downloaded apps that use accessibility, which EKOH uses to press
+buttons for you. If your phone shows **“App blocked to protect your device”**, install
+**[EKOH Lite](https://github.com/zaceprolly/EKOH/releases/latest/download/EKOH-Lite.apk)** instead.
+It pops up over other apps the same way, but can't press on-screen buttons, so these don't work in Lite:
+Mute / Speaker / Hang up by voice during calls, WhatsApp group calls, Spotify auto-play, and
+“go home / back / lock screen”. Everything else works. Install one or the other, not both.
+
+## Updates
+
+EKOH never goes online, so it can't check for updates itself. Two easy ways:
+
+- **One tap:** in EKOH, open **Settings › Get the latest version**. It downloads the newest version; open the file to update.
+  Your settings stay.
+- **Automatic alerts:** install the free, open-source **[Obtainium](https://github.com/ImranR98/Obtainium)** app, then tap
+  **[Add EKOH to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/zaceprolly/EKOH)**
+  (or EKOH › Settings › Automatic update alerts). Obtainium tells you when a new EKOH is out and installs it.
+  If it asks which file to use, pick `EKOH.apk` (or `EKOH-Lite.apk` if you use Lite).
 
 ## What you can say
 
