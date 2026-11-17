@@ -25,7 +25,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.virustotal.com/gui/file/7651934984b539e6d7dd11455c692893947d7611545939e0fac0065a0f0e0e0c"><img src="https://img.shields.io/badge/VirusTotal-0%20of%2067%20engines%20flag%20it-2E7D32?style=flat-square" alt="VirusTotal: 0 of 67 engines flag it"></a>
+  <a href="https://www.virustotal.com/gui/file/edebc628f9b0ea54beae30ce22d54363628ed985fedc62b87c37a4c52fc550db"><img src="https://img.shields.io/badge/VirusTotal-no%20engine%20flags%20it-2E7D32?style=flat-square" alt="VirusTotal: no engine flags it"></a>
 </p>
 
 ---
@@ -92,7 +92,7 @@ The green dot at the top of your screen shows when EKOH is using the microphone,
 EKOH lets go of the microphone when the screen is off, while you watch videos or play games, and
 whenever another app needs it.
 
-**Scanned clean:** [VirusTotal report](https://www.virustotal.com/gui/file/7651934984b539e6d7dd11455c692893947d7611545939e0fac0065a0f0e0e0c): 0 of 67 antivirus engines (including Google's) flag EKOH.
+**Scanned clean:** [VirusTotal report](https://www.virustotal.com/gui/file/edebc628f9b0ea54beae30ce22d54363628ed985fedc62b87c37a4c52fc550db): no antivirus engine flags EKOH.
 
 If Play Protect warns you anyway: in India, Google automatically warns about every app downloaded from a
 browser that uses accessibility or notification access (EKOH uses them to press call buttons and control
@@ -116,4 +116,4 @@ you say it. EKOH can also use Android's **English (India)** speech pack for Indi
 ## Verify the download
 
 Every release lists the SHA-256 checksum of `EKOH.apk` in its notes, and you can look it up on
-[VirusTotal](https://www.virustotal.com/gui/file/7651934984b539e6d7dd11455c692893947d7611545939e0fac0065a0f0e0e0c).
+[VirusTotal](https://www.virustotal.com/gui/file/edebc628f9b0ea54beae30ce22d54363628ed985fedc62b87c37a4c52fc550db).
