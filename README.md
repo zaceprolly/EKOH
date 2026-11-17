@@ -20,8 +20,17 @@
 </p>
 
 <p align="center">
-  <sub>Phone says <b>“App blocked to protect your device”</b>? Use
-  <a href="https://github.com/zaceprolly/EKOH/releases/latest/download/EKOH-Lite.apk">EKOH Lite</a> (beta) instead.</sub>
+  <b>Phone says “App blocked to protect your device”?</b> Download EKOH Lite instead:
+</p>
+
+<p align="center">
+  <a href="https://github.com/zaceprolly/EKOH/releases/latest/download/EKOH-Lite.apk">
+    <img src="https://img.shields.io/badge/Download-EKOH%20Lite.apk-0F7B6C?style=for-the-badge" alt="Download EKOH Lite.apk" height="48">
+  </a>
+</p>
+
+<p align="center">
+  <sub>Install one or the other, not both. <a href="#ekoh-lite-vs-ekoh">What's the difference?</a></sub>
 </p>
 
 <p align="center">
@@ -40,14 +49,32 @@ If Android shows **“Restricted setting”** when you turn on EKOH's accessibil
 **Settings › Apps › EKOH**, tap the three-dot menu, choose **Allow restricted settings**, then try again.
 (Android does this for every app installed outside the Play Store.)
 
-## EKOH Lite (only if the main version won't install)
+## EKOH Lite vs EKOH
 
 In India, Google Play Protect blocks downloaded apps that use accessibility, which EKOH uses to press
-buttons for you. If your phone shows **“App blocked to protect your device”**, install
+buttons on the screen for you. If your phone shows **“App blocked to protect your device”**, install
 **[EKOH Lite](https://github.com/zaceprolly/EKOH/releases/latest/download/EKOH-Lite.apk)** instead.
-It pops up over other apps the same way, but can't press on-screen buttons, so these don't work in Lite:
-Mute / Speaker / Hang up by voice during calls, WhatsApp group calls, Spotify auto-play, and
-“go home / back / lock screen”. Everything else works. Install one or the other, not both.
+It has its own icon (with LITE under the mascot) and pops up over other apps the same way.
+Install one or the other, not both.
+
+| | EKOH | EKOH Lite |
+|---|:---:|:---:|
+| Wake word “EKOH” and the floating blob | Yes | Yes |
+| Phone calls and WhatsApp calls | Yes | Yes |
+| Timers, alarms and reminders | Yes | Yes |
+| Opening apps, camera, maps and texts | Yes | Yes |
+| Play, pause and next for music | Yes | Yes |
+| Time, date, battery and sums, out loud | Yes | Yes |
+| Fully offline: no internet, no tracking | Yes | Yes |
+| Mute, speaker and hang up by voice during calls | Yes | No |
+| WhatsApp group calls | Yes | No |
+| Spotify plays by itself | Yes | Opens the search |
+| Back, close app, recent apps, lock screen, screenshot | Yes | No |
+| Connecting Bluetooth headphones by voice | Yes | No |
+| Pausing listening during videos and games | Yes | No |
+| Installs when Play Protect blocks accessibility apps | No | Yes |
+
+If you ask EKOH Lite for something only the full version can do, it tells you.
 
 ## Updates
 
@@ -110,7 +137,8 @@ you say it. EKOH can also use Android's **English (India)** speech pack for Indi
 ## Good to know
 
 - Works best on phones with Google's speech services (most Android phones).
-- Spotify playback works best when EKOH has notification access (setup asks for it).
+- Phones without Android's own speech engine (many OnePlus, Motorola, Samsung and budget phones) are fine:
+  EKOH switches to Google's offline speech or its own built-in offline model by itself.
 - No weather or web answers: those need the internet, which EKOH deliberately doesn't have.
 
 ## Verify the download
