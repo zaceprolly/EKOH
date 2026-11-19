@@ -5,7 +5,7 @@
 <h1 align="center">EKOH</h1>
 
 <p align="center">
-  A voice assistant for Android that works completely offline.<br>
+  A voice assistant for Android that works offline.<br>
   Say “EKOH”, then tell it what to do. Nothing you say ever leaves your phone.
 </p>
 
@@ -41,7 +41,7 @@
 
 ## Install in 3 steps
 
-1. On your phone, tap **[Download EKOH.apk](https://github.com/zaceprolly/EKOH/releases/latest/download/EKOH.apk)** (about 80 MB).
+1. On your phone, tap **[Download EKOH.apk](https://github.com/zaceprolly/EKOH/releases/latest/download/EKOH.apk)** (about 140 MB).
 2. Open the downloaded file. If Android asks, allow your browser to **install unknown apps**, then tap **Install**.
 3. Open **EKOH**. The setup walks you through each permission and says why it's needed.
 
@@ -65,11 +65,21 @@ Install one or the other, not both.
 | Opening apps, camera, maps and texts | Yes | Yes |
 | Play, pause and next for music | Yes | Yes |
 | Time, date, battery and sums, out loud | Yes | Yes |
-| Fully offline: no internet, no tracking | Yes | Yes |
+| Offline, with EKOH's own built-in voice | Yes | Yes |
+| Quick Access: your apps under EKOH from the power button | Yes | Yes |
+| Several things in one command | Yes | Yes |
+| Maths, simple to advanced, with the answer in a pop-up | Yes | Yes |
+| Call it any name you like (“Jarvis”), and wake it with that name | Yes | Yes |
+| Screenshots by voice | Yes | Yes (tap Start each time) |
+| Google results in a pop-up, directions by voice | Yes | Yes |
+| Automatic updates (the only use of the internet, can be off) | Yes | Yes |
+| Reads Google's answer out loud, trip time, “Should I start the navigation?” | Yes | No |
+| Answer, mute and hang up WhatsApp calls by voice | Yes | No |
+| Split screen | Yes | No |
 | Mute, speaker and hang up by voice during calls | Yes | No |
 | WhatsApp group calls | Yes | No |
 | Spotify plays by itself | Yes | Opens the search |
-| Back, close app, recent apps, lock screen, screenshot | Yes | No |
+| Back, close app, recent apps, lock screen | Yes | No |
 | Connecting Bluetooth headphones by voice | Yes | No |
 | Pausing listening during videos and games | Yes | No |
 | Installs when Play Protect blocks accessibility apps | No | Yes |
@@ -78,14 +88,16 @@ If you ask EKOH Lite for something only the full version can do, it tells you.
 
 ## Updates
 
-EKOH never goes online, so it can't check for updates itself. Two easy ways:
+EKOH updates itself. Once a day it asks GitHub whether there's a new version, downloads it and installs it.
+Android asks you to confirm the first time. Every update must be signed with EKOH's own key, or EKOH
+won't install it. Your settings stay.
 
-- **One tap:** in EKOH, open **Settings › Get the latest version**. It downloads the newest version; open the file to update.
-  Your settings stay.
-- **Automatic alerts:** install the free, open-source **[Obtainium](https://github.com/ImranR98/Obtainium)** app, then tap
-  **[Add EKOH to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/zaceprolly/EKOH)**
-  (or EKOH › Settings › Automatic update alerts). Obtainium tells you when a new EKOH is out and installs it.
-  If it asks which file to use, pick `EKOH.apk` (or `EKOH-Lite.apk` if you use Lite).
+This is the only thing EKOH uses the internet for. Switch it off in **Settings › Automatic updates** and
+EKOH never goes online at all. **Settings › Check for updates now** checks straight away.
+
+**Coming from 1.1.2 or older?** Install 1.2.0 once by hand from the download button above. Android switches
+EKOH's accessibility service off when an update adds new permissions, as 1.2.0 does, so turn
+**EKOH call controls** back on afterwards in phone **Settings › Accessibility**.
 
 ## What you can say
 
@@ -98,21 +110,28 @@ EKOH never goes online, so it can't check for updates itself. Two easy ways:
 | “Remind me to call Dad at 8” | Reminders |
 | “Play Kanye West on Spotify” · “Play a playlist” · “Play my liked songs” | Music |
 | “Pause” · “Next” · “Volume up” | Music controls |
-| “Open YouTube” · “Take a selfie” · “Navigate to India Gate” | Apps, camera, maps |
+| “Open YouTube” · “Open Spotify and play” · “Take a selfie” | Apps and camera |
+| “Navigate to India Gate” · “Stop navigation” | Directions in Google Maps |
+| “Search best phones under 20000” · “Tell me about Diwali” | Google results in a pop-up |
+| “Split screen Spotify and YouTube” | Two apps side by side |
 | “Text Mom saying I'm on my way” | Opens your messages with the text ready |
-| “What time is it?” · “How much battery?” · “What is 25 times 4?” | Spoken answers |
+| “What time is it?” · “How much battery?” | Spoken answers |
+| “What's 3 square plus 4 square?” · “15% of 2000” · “Solve 2x + 3 = 11” | Maths, answer in a pop-up |
+| “Open Instagram and call Dad” · “Turn on the torch, then set a timer for 5 minutes” | Several things at once |
 | “EKOH, stop listening” | Stops background listening (hold the power button to turn it back on) |
 
-You can also hold the power button to talk to EKOH.
+You can also hold the power button to talk to EKOH. Turn on **Quick Access** (end of setup, or Settings) and your
+favourite apps appear in a bar under EKOH too: tap one to open it.
 
 ## Privacy
 
 | | |
 |---|---|
-| Internet access | **None.** EKOH doesn't have Android's internet permission, so Android blocks every connection it could make. |
+| Internet access | **Only for automatic updates**, and only while they're on. Nothing about you is sent: it's a plain download from GitHub. Turn updates off and EKOH never goes online. |
+| Google search | Opens in your browser, the same as searching there yourself. You can switch it off. |
 | Wake word | A small model inside the app. |
-| Speech to text | Android's on-device speech engine, which itself has no internet access. |
-| Voice | Offline voices on your phone. |
+| Speech to text | Android's on-device speech engine. |
+| Voice | EKOH's own voice, built into the app and made on your phone. |
 | Account, ads, analytics | None. There is no server. |
 
 The green dot at the top of your screen shows when EKOH is using the microphone, so you always know.
@@ -125,9 +144,9 @@ If Play Protect warns you anyway: in India, Google automatically warns about eve
 browser that uses accessibility or notification access (EKOH uses them to press call buttons and control
 music). Tap **More details › Install anyway**.
 
-**Check it yourself:** Settings › Apps › EKOH › Permissions has no network permission. Or watch your
-phone's traffic with a no-root packet logger such as [PCAPdroid](https://github.com/emanuele-f/PCAPdroid):
-EKOH never appears.
+**Check it yourself:** watch your phone's traffic with a no-root packet logger such as
+[PCAPdroid](https://github.com/emanuele-f/PCAPdroid). With automatic updates off, EKOH never appears. With
+them on, you'll only see api.github.com and github.com, once a day.
 
 ## Your accent
 
@@ -139,7 +158,8 @@ you say it. EKOH can also use Android's **English (India)** speech pack for Indi
 - Works best on phones with Google's speech services (most Android phones).
 - Phones without Android's own speech engine (many OnePlus, Motorola, Samsung and budget phones) are fine:
   EKOH switches to Google's offline speech or its own built-in offline model by itself.
-- No weather or web answers: those need the internet, which EKOH deliberately doesn't have.
+- Web answers come from Google in your browser. The full EKOH reads them out; EKOH Lite shows them.
+- “Stop navigation” needs notification access, which is optional. Everything else works without it.
 
 ## Verify the download
 
